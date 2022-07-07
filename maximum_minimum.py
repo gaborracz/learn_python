@@ -4,9 +4,9 @@
 # number catch it with a try/except and put out an appropriate message and 
 # ignore the number. Enter 7, 2, bob, 10, and 4 and match the output below.
 # Desired output:
-# Invalid input
-# Maximum is 10
-# Minimum is 2
+#   Invalid input
+#   Maximum is 10
+#   Minimum is 2
 
 largest = None
 smallest = None
@@ -30,7 +30,7 @@ while True:
     elif smallest > fval:
         smallest = fval
     elif largest < fval:
-        largest = fval      
+        largest = fval
     else:
         continue
 
