@@ -8,7 +8,6 @@
 # Maximum is 10
 # Minimum is 2
 
-
 largest = None
 smallest = None
 
