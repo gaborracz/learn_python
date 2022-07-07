@@ -13,13 +13,16 @@ smallest = None
 
 while True:
     sval = input("Enter a number: ")
+    
     if sval == 'done':
         break
+    
     try:
         fval = float(sval)
     except:
         print("Invalid input")
         continue
+    
     if largest is None:
         largest = fval
     elif smallest is None:
