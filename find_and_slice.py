@@ -5,9 +5,9 @@
 
 text = "X-DSPAM-Confidence:    0.8475"
 
-pos = text.find('0')
+pos = text.find(':')
 
-number = text[pos : ]
+number = text[pos + 5 : ]
 
 float(number)
 
