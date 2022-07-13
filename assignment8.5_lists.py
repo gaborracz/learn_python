@@ -19,6 +19,7 @@ fileHandler = open(fileName)
 counter = 0
 
 for line in fileHandler :
+    
     if line.startswith("From ") :
         line = line.strip()
         fromField = line.split()
