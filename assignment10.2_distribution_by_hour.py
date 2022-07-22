@@ -17,10 +17,15 @@ for line in file_handler :
         continue
     
     else :
+        print(line)
         words = line.split()
+        print(words)
         time = words[5]
+        print(time)
         time_split = time.split(':')
+        print(time_split)
         hour = time_split[0]
+        print(time)
         counter[hour] = counter.get(hour, 0) +1
 
 lst = list()
