@@ -15,18 +15,30 @@ class PartyAnimmal:
 class AnotherAnimal:
     
     x = 0
+    name = ""
     
+    def __init__(self, z):
+        print("AnotherAnimal is constructed...")
+        self.name = z   
+
     def party(self):
         self.x += 1
-        print(f"I am another animal.. self.x is: {self.x}")
+        if self.x > 3:
+            print(f"{self.name} is partying real hard....")
+        else:
+            print(f"{self.name} is partying...")
 
 
 an = PartyAnimmal()
 
-print("This is the type of an : ", type(an))
-print("This is the dir of an : ", dir(an))
+# print("This is the type of an : ", type(an))
+# print("This is the dir of an : ", dir(an))
 
-aa = AnotherAnimal()
-
-print("\n\nThis is the type of aa : ", type(an))
-print("This is the dir of aa : ", dir(an))
+aa = AnotherAnimal("Jim")
+aa.party()
+aa.party()
+aa.party()
+aa.party()
+aa.party()
+# print("\n\nThis is the type of aa : ", type(an))
+# print("This is the dir of aa : ", dir(an))
